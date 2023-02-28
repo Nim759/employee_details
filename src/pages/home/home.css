@@ -1,0 +1,28 @@
+.fullbodyContainer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .bodycontainer{
+    width: 100%;
+    max-width: 1024px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .buttons{
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  .Button1{
+    padding:25px 40px 25px 40px;
+    border-radius: 15px;
+    background-color: rgb(108, 161, 233);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
