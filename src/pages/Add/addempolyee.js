@@ -157,10 +157,9 @@ const AddEmployee = () => {
 
 
       
-      const res = await fetch("http://examination.24x7retail.com/api/v1.0/Employee?D(G+KbPeSgVkYp3s6v9y$B&E)H@McQf",{
+      const res = await fetch("http://localhost:5000/api/v1.0/Employee",{
       method:"POST",
-      headers:{"Content-Type":"application/json"
-      },
+      headers:{"Content-Type":"application/json" },
       
       body:JSON.stringify({
         empNo,
@@ -179,6 +178,7 @@ const AddEmployee = () => {
     })
     
     const data = await res.json()
+    console.log(data);
 
     if(data.status === 422 || !data){
       console.log('invalid registration');
